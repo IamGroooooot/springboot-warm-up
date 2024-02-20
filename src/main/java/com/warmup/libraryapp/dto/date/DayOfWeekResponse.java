@@ -1,5 +1,6 @@
 package com.warmup.libraryapp.dto.date;
 
+@SuppressWarnings("unused")
 public class DayOfWeekResponse {
     private String dayOfTheWeek;
 

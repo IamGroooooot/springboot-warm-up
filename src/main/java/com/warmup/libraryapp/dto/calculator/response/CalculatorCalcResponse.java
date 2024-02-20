@@ -1,5 +1,6 @@
 package com.warmup.libraryapp.dto.calculator.response;
 
+@SuppressWarnings("unused")
 public class CalculatorCalcResponse {
     private int add;
     private int minus;

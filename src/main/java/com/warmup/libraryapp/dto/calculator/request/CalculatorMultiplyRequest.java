@@ -1,5 +1,6 @@
 package com.warmup.libraryapp.dto.calculator.request;
 
+@SuppressWarnings("unused")
 public class CalculatorMultiplyRequest {
     private final int number1;
     private final int number2;

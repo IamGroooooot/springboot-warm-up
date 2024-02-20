@@ -1,5 +1,6 @@
 package com.warmup.libraryapp.dto.calculator.request;
 
+@SuppressWarnings("unused")
 public class CalculatorCalcRequest {
     private final int num1;
     private final int num2;
