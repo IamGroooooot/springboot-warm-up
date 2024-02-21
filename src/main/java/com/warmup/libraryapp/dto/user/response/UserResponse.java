@@ -3,9 +3,11 @@ package com.warmup.libraryapp.dto.user.response;
 public class UserResponse {
     private long id;
     private String name;
-    private String age;
+    private int age;
 
-    public UserResponse(long id, String name, String age) {
+
+    public UserResponse(long id, String name, int age) {
+        this.id = id;
         this.name = name;
         this.age = age;
     }
@@ -18,7 +20,7 @@ public class UserResponse {
         return name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 }
