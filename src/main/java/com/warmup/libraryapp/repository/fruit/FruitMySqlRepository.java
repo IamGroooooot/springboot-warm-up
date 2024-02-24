@@ -1,12 +1,14 @@
 package com.warmup.libraryapp.repository.fruit;
 
 import com.warmup.libraryapp.domain.Fruit;
+import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Primary
 @Repository
 public class FruitMySqlRepository implements FruitRepository {
     private final JdbcTemplate jdbcTemplate;
