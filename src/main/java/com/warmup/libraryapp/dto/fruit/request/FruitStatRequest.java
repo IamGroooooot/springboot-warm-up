@@ -1,7 +1,7 @@
 package com.warmup.libraryapp.dto.fruit.request;
 
 public class FruitStatRequest {
-    private String name;
+    private final String name;
 
     public FruitStatRequest(String name) {
         this.name = name;

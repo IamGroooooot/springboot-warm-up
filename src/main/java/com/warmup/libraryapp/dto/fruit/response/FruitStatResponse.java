@@ -1,8 +1,8 @@
 package com.warmup.libraryapp.dto.fruit.response;
 
 public class FruitStatResponse {
-    private Long salesAmount;
-    private Long notSalesAmount;
+    private final Long salesAmount;
+    private final Long notSalesAmount;
 
     public FruitStatResponse(Long salesAmount, Long notSalesAmount) {
         this.salesAmount = salesAmount;

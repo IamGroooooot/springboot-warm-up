@@ -5,9 +5,9 @@ import com.warmup.libraryapp.domain.User;
 import java.util.List;
 
 public class UserResponse {
-    private long id;
-    private String name;
-    private int age;
+    private final long id;
+    private final String name;
+    private final int age;
 
 
     public UserResponse(long id, String name, int age) {

@@ -1,7 +1,7 @@
 package com.warmup.libraryapp.dto.fruit.response;
 
 public class FruitSellResponse {
-    private Long id;
+    private final Long id;
 
     public FruitSellResponse(Long id) {
         this.id = id;
