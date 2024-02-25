@@ -2,13 +2,13 @@ package com.warmup.libraryapp.dto.user.request;
 
 public class UserCreateRequest {
     private String name;
-    private String age;
+    private int age;
 
     public String getName() {
         return name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 }

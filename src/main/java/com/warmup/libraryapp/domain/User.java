@@ -1,13 +1,15 @@
 package com.warmup.libraryapp.domain;
 
 public class User {
+    private final Long id;
     private String name;
-    private String age;
+    private int age;
 
-    public User(String name, String age) {
+    public User(Long id, String name, int age) {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException(String.format("Wrong name: %s", name));
         }
+        this.id = id;
         this.name = name;
         this.age = age;
     }
@@ -16,7 +18,11 @@ public class User {
         return name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
+    }
+
+    public Long getId() {
+        return id;
     }
 }

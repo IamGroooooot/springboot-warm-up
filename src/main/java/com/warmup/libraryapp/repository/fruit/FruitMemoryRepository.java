@@ -1,7 +1,6 @@
 package com.warmup.libraryapp.repository.fruit;
 
 import com.warmup.libraryapp.domain.Fruit;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
