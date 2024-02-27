@@ -38,8 +38,6 @@ public class FruitController {
 
     @GetMapping("/list")
     public List<FruitListResponse> getFruitList(FruitListRequest request) {
-        System.out.println(request.getOption());
-        System.out.println(request.getPrice());
         return fruitService.getFruitList(request);
     }
 }
