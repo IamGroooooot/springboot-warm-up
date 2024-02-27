@@ -18,7 +18,7 @@ public class CalculatorController {
     }
 
     @PostMapping("/multiply")
-    public int multiplyTwoNumbers(@RequestBody CalculatorMultiplyRequest request){
+    public int multiplyTwoNumbers(@RequestBody CalculatorMultiplyRequest request) {
         return request.getNumber1() * request.getNumber2();
     }
 

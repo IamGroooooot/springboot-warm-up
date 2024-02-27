@@ -1,12 +1,18 @@
 package com.warmup.libraryapp.domain;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
+@Entity
 public class Fruit {
-    private final Long id; // for memory repository
-    private final String name;
-    private final LocalDate warehousingDate;
-    private final Long price;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id; // for memory repository
+    private String name;
+    @Column(name = "warehousing_date")
+    private LocalDate warehousingDate;
+    private Long price;
 
     private boolean isSold;
 
@@ -20,6 +26,10 @@ public class Fruit {
         this.warehousingDate = warehousingDate;
         this.price = price;
         this.isSold = isSold;
+    }
+
+    public Fruit() {
+
     }
 
     public String getName() {
@@ -38,10 +48,15 @@ public class Fruit {
         return isSold;
     }
 
-    public void setSold(boolean sold) {
+    public void setIsSold(boolean sold) {
         isSold = sold;
     }
+
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

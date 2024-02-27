@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class FruitMemoryRepository implements FruitRepository {
-    private final List<Fruit> fruits;
+public class FruitMemoryRepository implements FruitRepositoryV1 {
     private static Long id = 1L;
+    private final List<Fruit> fruits;
 
     public FruitMemoryRepository() {
         fruits = new ArrayList<>();
@@ -27,7 +27,7 @@ public class FruitMemoryRepository implements FruitRepository {
     public void updateFruit(Long id) {
         for (Fruit fruit : fruits) {
             if (fruit.getId().equals(id)) {
-                fruit.setSold(true);
+                fruit.setIsSold(true);
                 break;
             }
         }

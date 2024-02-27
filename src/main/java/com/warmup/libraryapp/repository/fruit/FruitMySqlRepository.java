@@ -10,7 +10,7 @@ import java.util.List;
 
 @Primary
 @Repository
-public class FruitMySqlRepository implements FruitRepository {
+public class FruitMySqlRepository implements FruitRepositoryV1 {
     private final JdbcTemplate jdbcTemplate;
 
     public FruitMySqlRepository(JdbcTemplate jdbcTemplate) {

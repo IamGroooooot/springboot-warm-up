@@ -17,20 +17,20 @@ public class FruitCreateResponse {
         return name;
     }
 
-    public String getWarehousingDate() {
-        return warehousingDate;
-    }
-
-    public Long getPrice() {
-        return price;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
+    public String getWarehousingDate() {
+        return warehousingDate;
+    }
+
     public void setWarehousingDate(String warehousingDate) {
         this.warehousingDate = warehousingDate;
+    }
+
+    public Long getPrice() {
+        return price;
     }
 
     public void setPrice(Long price) {
